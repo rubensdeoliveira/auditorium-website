@@ -1,11 +1,4 @@
 @import 'reset';
 @import 'grid';
-
-p {
-	color: red;
-}
-
-div {
-	font-family: 'Aref Ruqaa', serif;
-	font-family: 'PT Mono', monospace;
-}
+@import 'vars-mixins';
+@import 'global';
