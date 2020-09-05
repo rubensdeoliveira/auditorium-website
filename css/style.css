@@ -212,9 +212,9 @@ table {
 }
 
 body {
-  background: #6b0b0d;
-  border: 10px solid #180000;
-  color: #182938;
+  background: #fff;
+  border: 10px solid #6b0b0d;
+  color: #333333;
 }
 @media screen and (max-width: 759px) {
   body {
@@ -250,7 +250,7 @@ p {
   width: 75%;
   float: right;
   height: 2px;
-  background: #182938;
+  background: #333333;
   margin-top: 14px;
 }
 @media screen and (min-width: 760px) and (max-width: 1199px) {
@@ -274,19 +274,19 @@ p {
 }
 
 .intro-info {
-  border-right: 2px solid #182938;
+  border-right: 2px solid #333333;
   max-width: 320px;
 }
 .intro-info p {
   padding-top: 10px;
 }
 .intro-info p:first-child {
-  border-bottom: 2px solid #182938;
+  border-bottom: 2px solid #333333;
   padding-bottom: 10px;
 }
 
 .intro-phone {
-  color: #112233;
+  color: #6b0b0d;
 }
 @media screen and (max-width: 759px) {
   .intro-phone {
@@ -299,7 +299,7 @@ p {
   margin-top: 200px;
   font-size: 220px;
   letter-spacing: -90px;
-  color: #182938;
+  color: #333333;
 }
 @media screen and (min-width: 760px) and (max-width: 1199px) {
   .intro-phone::after {
@@ -324,9 +324,78 @@ p {
 }
 
 .intro-photo {
-  border: 10px solid #180000;
+  border: 10px solid #6b0b0d;
   width: 100%;
   max-height: 875px;
+}
+
+.about {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 759px) {
+  .about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.about-item {
+  margin-bottom: 120px;
+}
+.about-item h2 {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 1rem;
+}
+.about-item li {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  line-height: 2.1875rem;
+}
+.about-item li span {
+  font-family: "Aref Ruqaa", serif;
+  color: #6b0b0d;
+  display: inline-block;
+  width: 70px;
+  margin-right: 10px;
+  margin-left: -80px;
+  text-align: right;
+}
+@media screen and (max-width: 759px) {
+  .about-item li span {
+    margin-left: 0px;
+    width: auto;
+  }
+}
+.about-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #6b0b0d;
+  position: absolute;
+  right: 0px;
+  margin-top: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .about-item img {
+    right: 120px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .about-item img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .about-item img {
+    width: 120px;
+    height: 120px;
+    margin-top: 0px;
+  }
 }
 
 .prices {
@@ -357,7 +426,7 @@ p {
 }
 .prices-item li span {
   font-family: "Aref Ruqaa", serif;
-  color: #112233;
+  color: #6b0b0d;
   display: inline-block;
   width: 70px;
   margin-right: 10px;
@@ -374,7 +443,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 10px solid #180000;
+  border: 10px solid #6b0b0d;
   position: absolute;
   right: 0px;
   margin-top: 50px;
@@ -413,17 +482,17 @@ p {
   font-family: "PT Mono", monospace;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  color: #182938;
+  color: #333333;
   width: 100%;
   padding: 0 5px;
   height: 40px;
-  border: 2px solid #112233;
+  border: 2px solid #6b0b0d;
   background: transparent;
   margin-bottom: 1rem;
 }
 .contact form input[type=text]:hover, .contact form input[type=text]:focus, .contact form textarea:hover, .contact form textarea:focus {
   outline: none;
-  border-color: #180000;
+  border-color: #6b0b0d;
 }
 .contact form textarea {
   height: 120px;
@@ -434,14 +503,64 @@ input.button {
   font-size: 1.125rem;
   line-height: 1.875rem;
   cursor: pointer;
-  color: #112233;
+  color: #6b0b0d;
   text-transform: uppercase;
-  border: 2px solid #112233;
+  border: 2px solid #6b0b0d;
   background: transparent;
   display: block;
   width: 200px;
   padding-top: 5px;
-  box-shadow: 5px 5px 0 0 #180000;
+  box-shadow: 5px 5px 0 -2px #6b0b0d, 5px 5px 0 0 #6b0b0d;
+  transition: 0.3s;
+}
+input.button:hover {
+  box-shadow: 3px 3px 0 -2px #6b0b0d, 3px 3px 0 0 #6b0b0d;
+}
+
+.contact-info {
+  display: inline-block;
+  color: #6b0b0d;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1200px) {
+  .contact-info {
+    float: right;
+    text-align: right;
+    margin-top: -3rem;
+  }
+}
+
+.contact-map {
+  display: block;
+  box-shadow: 0 0 0 10px #6b0b0d;
+  clear: both;
+}
+.contact-map img {
+  width: 100%;
+}
+
+footer {
+  padding: 20px 0;
+  background: #333333;
+  box-shadow: 0 0 0 10px #333333;
+}
+footer p {
+  color: #fff;
+}
+@media screen and (max-width: 759px) {
+  footer p {
+    text-align: center;
+  }
+}
+footer a img {
+  float: right;
+}
+@media screen and (max-width: 759px) {
+  footer a img {
+    float: none;
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

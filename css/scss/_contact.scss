@@ -53,12 +53,12 @@ input.button {
 .contact-info {
   display: inline-block;
   color: $tertiary-color;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
   @include d(l) {
     float: right;
     text-align: right;
-    margin-bottom: -3rem;
+    margin-top: -3rem;
   }
 }
 
@@ -66,4 +66,7 @@ input.button {
   display: block;
   @include box-shadow(0 0 0 10px $secondary-color);
   clear: both;
+  img {
+    width: 100%;
+  }
 }

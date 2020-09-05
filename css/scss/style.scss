@@ -1,7 +1,12 @@
+// General
 @import 'reset';
 @import 'grid';
 @import 'vars-mixins';
 @import 'global';
+
+// Parts of site
 @import 'intro';
+@import 'about';
 @import 'prices';
 @import 'contact';
+@import 'footer';
