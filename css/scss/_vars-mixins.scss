@@ -32,3 +32,10 @@ $font-2: 'Aref Ruqaa', serif;
     line-height: rem(30);
   }
 }
+
+// Box shadow 
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+

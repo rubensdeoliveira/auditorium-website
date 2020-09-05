@@ -392,4 +392,56 @@ p {
   }
 }
 
+.contact {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 759px) {
+  .contact {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.contact form label {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  display: block;
+}
+.contact form input[type=text], .contact form textarea {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: #182938;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  border: 2px solid #112233;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+.contact form input[type=text]:hover, .contact form input[type=text]:focus, .contact form textarea:hover, .contact form textarea:focus {
+  outline: none;
+  border-color: #180000;
+}
+.contact form textarea {
+  height: 120px;
+}
+
+input.button {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  cursor: pointer;
+  color: #112233;
+  text-transform: uppercase;
+  border: 2px solid #112233;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  box-shadow: 5px 5px 0 0 #180000;
+}
+
 /*# sourceMappingURL=style.css.map */
