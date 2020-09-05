@@ -1,0 +1,50 @@
+.prices {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @include d(s) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.prices-item {
+  margin-bottom: 60px;
+  h2 {
+    @include type-2(24);
+    margin-bottom: 1rem;
+  }
+  li {
+    @include type-1(18);
+    line-height: rem(35);
+    span {
+      font-family: $font-2;
+      color: $tertiary-color;
+      display: inline-block;
+      width: 70px;
+      margin-right: 10px;
+      margin-left: -80px;
+      text-align: right;
+      @include d(s){
+        margin-left: 0px;
+        width: auto;
+      }
+    }
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid $secondary-color;
+    position: absolute;
+    right: 0px;
+    margin-top: 50px;
+    @include d(l) {
+      right: 120px;
+    }
+    @include d(s) {
+      width: 120px;
+      height: 120px;
+      margin-top: 0px;
+    }
+  }
+}

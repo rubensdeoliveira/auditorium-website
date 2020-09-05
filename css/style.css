@@ -269,6 +269,7 @@ p {
 }
 
 .logo {
+  max-width: 200px;
   margin-bottom: 60px;
 }
 
@@ -325,6 +326,70 @@ p {
 .intro-photo {
   border: 10px solid #180000;
   width: 100%;
+  max-height: 875px;
+}
+
+.prices {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 759px) {
+  .prices {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.prices-item {
+  margin-bottom: 60px;
+}
+.prices-item h2 {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-bottom: 1rem;
+}
+.prices-item li {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  line-height: 2.1875rem;
+}
+.prices-item li span {
+  font-family: "Aref Ruqaa", serif;
+  color: #112233;
+  display: inline-block;
+  width: 70px;
+  margin-right: 10px;
+  margin-left: -80px;
+  text-align: right;
+}
+@media screen and (max-width: 759px) {
+  .prices-item li span {
+    margin-left: 0px;
+    width: auto;
+  }
+}
+.prices-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #180000;
+  position: absolute;
+  right: 0px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .prices-item img {
+    right: 120px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .prices-item img {
+    width: 120px;
+    height: 120px;
+    margin-top: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

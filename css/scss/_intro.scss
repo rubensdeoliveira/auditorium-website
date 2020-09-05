@@ -6,6 +6,7 @@
 }
 
 .logo {
+  max-width: 200px;
   margin-bottom: 60px;
 }
 
@@ -56,4 +57,5 @@
 .intro-photo {
   border: 10px solid $secondary-color;
   width: 100%;
+  max-height: 875px;
 }
