@@ -214,6 +214,37 @@ table {
 body {
   background: #6b0b0d;
   border: 10px solid #180000;
+  color: #182938;
+}
+@media screen and (max-width: 759px) {
+  body {
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.title {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 759px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  float: right;
+  height: 2px;
+  background: #182938;
 }
 
 /*# sourceMappingURL=style.css.map */
