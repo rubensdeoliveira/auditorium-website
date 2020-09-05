@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Auditório - JR Contabilidade & Sistemas">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Auditório - JR Contabilidade & Sistemas</title>
 </head>
 <body>
-  <div class="container">
-    <div class="grid-3">Teste1</div>
-    <div class="grid-3">Teste2</div>
-    <div class="grid-3">Teste3</div>
-    <div class="grid-3">Teste4</div>
-  </div>
+  <main class="container intro">
+    <div class="grid-5">
+      <img class="logo" src="imgs/jrces.png" alt="JR Contabilidade & Sistemas" />
+      <div class="intro-info">
+        <p>De Seg. à Sáb.<span class="open"></span><br>das 08:00h às 21:00h</p>
+        <p>Rua Pedro Velho, 668, Centro<br>Caicó - RN</p>
+      </div>
+      <p class="intro-telefone">(84) 3417-1032</p>
+    </div>
+    <div class="grid-7">
+      <img src="imgs/auditorio.jpg" src="Auditório" />
+    </div>
+  </main>
+
+  <section class="container prices">
+    <h1 class="grid-4 title">Menu</h1>
+    <div class="grid-7 offset-1">
+      <div class="prices-item">
+        <h2>Entradas</h2>
+        <ul>
+          <li><span>R$1,70</span>Ovos mexidos</li>
+          <li><span>R$1,70</span>Ovos mexidos</li>
+          <li><span>R$1,70</span>Ovos mexidos</li>
+          <li><span>R$1,70</span>Ovos mexidos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container contact">
+    <h1 class="grid-4 title">Contato</h1>
+    <div class="grid-7 offset-1">
+      <form>
+        <label>Nome</label>
+        <input type="text">
+        <div class="row">
+          <div class="grid-7">
+            <label>E-mail</label>
+            <input type="text">
+          </div>
+          <div class="grid-5">
+            <label>Telefone</label>
+            <input type="text">
+          </div>
+        </div>
+        <label>Mensagem</label>
+        <textarea></textarea>
+        <input class="button" type="button" value="Enviar">
+      </form>
+      <div class="contact-info">
+        <p>auditorio@jrcontabilidadeesistemas.com.br ////</p>
+        <p>(84) 3417-1032 ////</p>
+      </div>
+      <a href="#" class="contact-map">
+        <img src="imgs/map.png" alt="Mapa com localização da empresa">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Auditório - JR Contabilidade & Sistemas © 1980 - 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
